@@ -11,3 +11,7 @@ function makeMessage(pizzaName, callback) {
 }
 console.log(makeMessage("Royal Grand", makePizza)); // "Pizza Royal Grand is being prepared, please wait..."
 console.log(makeMessage("Ultracheese", deliverPizza)); // "Delivering Ultracheese pizza."
+
+registerGuest("Mango", function greet(name) {
+  console.log(`Welcome ${name}!`);
+});
