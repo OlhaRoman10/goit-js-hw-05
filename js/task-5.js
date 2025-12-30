@@ -32,3 +32,12 @@ makePizza("Royal Grand", function deliverPizza(pizzaName) {
 makePizza("Ultracheese", function eatPizza(pizzaName) {console.log(`Eating pizza ${pizzaName}`);
   
 });
+
+const numbers = [5, 10, 15, 20, 25];
+
+const logMessage = (number, index) => {
+  console.log(`Index ${index}, value ${number}`);
+};
+
+numbers.forEach(logMessage);
+
