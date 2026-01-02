@@ -43,7 +43,7 @@
 
 // const calculateTotalPrice = (orderedItems) => {
 //   let totalPrice = 0;
-//   orderedItems.forEach((item) => 
+//   orderedItems.forEach((item) =>
 //     totalPrice += item);
 //   return totalPrice;
 // };
@@ -181,7 +181,43 @@
 
 // const getUserWithEmail = (users, email) => users.find((user) => user.email === email);
 
-const total = [2, 7, 3].reduce((previousValue, number) => {
-  return previousValue + number;
-}, 0);
+// const total = [2, 7, 3].reduce((previousValue, number) => {
+//   return previousValue + number;
+// }, 0);
 
+// console.log(total); // 12
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+
+// const totalPlayTime = playtimes.reduce((previousValue, value, players) => {
+//   return previousValue + value;
+// }, 0);
+
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+
+// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+//   return acc + player.playtime / player.gamesPlayed;
+// }, 0);
+
+// const calculateTotalBalance = (users) => users.reduce((total, user) => {
+//   return total + user.balance;
+// }, 0);
+
+const students = ["Jacob", "Artemis", "Solomon", "Adrian", "Kai", "Ganymede"];
+
+const inAlphabetOrder = students.toSorted();
+console.log(inAlphabetOrder); // [ "Adrian", "Artemis", "Ganymede", "Jacob", "Kai", "Solomon" ]
