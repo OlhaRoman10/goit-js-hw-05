@@ -238,7 +238,7 @@ const inDescendingScoreOrder = students.toSorted(
   (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
 );
 
-const inAlphabeticalOrder = students.toSorted((firstStudent, secondStudent) =>
+const inAlphabeticalOrder = students.toSorted((firstStudent.name, secondStudent.name) =>
   firstStudent.name.localeCompare(secondStudent.name)
 );
 console.log(inAlphabeticalOrder);
