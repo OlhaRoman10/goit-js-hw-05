@@ -252,7 +252,7 @@
 // const names = books.filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).toSorted((a, b) => a.localeCompare(b));
 
 
-const getTotalBalanceByGender = (users, gender) => users.filter(user => user.gender === gender).reduce((total, user) => total + user.balance, 0);  
+const getTotalBalanceGender = (users, gender) => users.filter(user => user.gender === gender).reduce((total, user) => total + user.balance, 0);  
 const clients = [
 	{
     name: "Moore Hensley",
@@ -291,6 +291,6 @@ const clients = [
   }
 ];
 
-console.log(getTotalBalanceByGender(clients, "male")); // 11053
+console.log(getTotalBalanceGender(clients, "male")); // 11053
 
-console.log(getTotalBalanceByGender(clients, "female")); // 7863
+console.log(getTotalBalanceGender(clients, "female")); // 7863
