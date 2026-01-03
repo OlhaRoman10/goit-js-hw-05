@@ -250,3 +250,47 @@
 // const MIN_BOOK_RATING = 8;
 
 // const names = books.filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author).toSorted((a, b) => a.localeCompare(b));
+
+
+const getTotalBalanceByGender = (users, gender) => users.filter(user => user.gender === gender).reduce((total, user) => total + user.balance, 0);  
+const clients = [
+	{
+    name: "Moore Hensley",
+    gender: "male",
+    balance: 2811
+  },
+  {
+    name: "Sharlene Bush",
+    gender: "female",
+    balance: 3821
+  },
+  {
+    name: "Ross Vazquez",
+    gender: "male",
+    balance: 3793
+  },
+  {
+    name: "Elma Head",
+    gender: "female",
+    balance: 2278
+  },
+  {
+    name: "Carey Barr",
+    gender: "male",
+    balance: 3951
+  },
+  {
+    name: "Blackburn Dotson",
+    gender: "male",
+    balance: 498
+  },
+  {
+    name: "Sheree Anthony",
+    gender: "female",
+    balance: 1764
+  }
+];
+
+console.log(getTotalBalanceByGender(clients, "male")); // 11053
+
+console.log(getTotalBalanceByGender(clients, "female")); // 7863
